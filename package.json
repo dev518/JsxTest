@@ -1,0 +1,33 @@
+{
+  "name": "jsxtest",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "babel": {
+    "plugins": [
+      [
+        "@babel/plugin-transform-react-jsx",
+        {
+          "pragma": "Demo",
+          "pragmaFrag": "DemoFrag",
+          "throwIfNamespace": false
+        }
+      ]
+    ],
+    "presets": [
+      "@babel/preset-env"
+    ]
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.2.3",
+    "@babel/core": "^7.2.2",
+    "@babel/plugin-transform-react-jsx": "^7.3.0",
+    "@babel/preset-react": "^7.0.0"
+  },
+  "dependencies": {}
+}
